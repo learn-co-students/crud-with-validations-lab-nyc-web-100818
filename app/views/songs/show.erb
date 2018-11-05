@@ -1,0 +1,10 @@
+<h1>Song</h1>
+<%=link_to @song.title, edit_song_path %>
+<h3>Released officially</h3>
+<%= @song.released %>
+<h3>Release Year</h3>
+<%= @song.release_year %>
+<h3>Artist</h3>
+<%= @song.artist_name ||= "No artist specified" %>
+<h3>Genre</h3>
+<%= @song.genre ||= "No genre specified" %>
