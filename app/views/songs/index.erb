@@ -1,0 +1,13 @@
+<h1>ALL THE SONGS!</h1>
+
+<ol>
+<% @songs.each do |s| %>
+<li>Title: "<%= s.title %>" -->
+<%= link_to "LEARN MORE", s %>|| <%= link_to "Edit Me!", edit_song_path(s)  %> || <%= link_to "Delete This Entry", s, method: :delete, data: { confirm: "Really?" } %></li>
+<% end %>
+<br><br>
+</ol>
+
+<br><br>
+
+<%= link_to "Add A New Song", new_song_path %>
