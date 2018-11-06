@@ -1,0 +1,12 @@
+<h1>Everything and then some, about <%= @song.title %>:</h1>
+
+
+Title: <%= @song.title %><br><br>
+Artist: <%= @song.artist_name %><br><br>
+Out Now? <%= @song.released %><br><br>
+Release Year:<%= @song.release_year %>
+<br><br>
+Genre: <%= @song.genre %>
+
+<br><br><br>
+<%= link_to "Return Home", songs_path %> || <%= link_to "Edit Entry", edit_song_path %> || <%= link_to "Delete This Song", @song, method: :delete, data: { confirm: "Really?" } %>
