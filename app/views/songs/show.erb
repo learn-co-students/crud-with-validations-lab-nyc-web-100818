@@ -1,0 +1,9 @@
+<h1>Show Song</h1>
+<%= @song.title %></br>
+<%= @song.release_year %></br>
+<%= @song.artist_name %></br>
+<%= @song.genre %></br>
+
+<%= form_for(@song, :html => {method: "DELETE"}) do |f| %>
+  <%= f.submit "Delete" %>
+<% end %>
